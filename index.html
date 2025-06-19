@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peak Fysik</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    
+    <main>
+        <header class="header-desktop">
+            <a href="./index.html" class="logo">PeakFysik</a>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/people/PeakFysik/61571074644315/"><i class='bxl bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/peakfysik/"><i class='bxl bxl-instagram'></i> </a>
+                <a href="https://www.tiktok.com/@peak.fysik"><i class='bxl bxl-tiktok'></i> </a>
+            </div>
+
+            <nav class="navbar">
+                <a href="./index.html">Hem</a>
+                <a href="./pages/services.html">Tjänster</a>
+                <a href="./pages/about.html">Om</a>
+                <a href="./pages/contact.html">Kontakt</a>
+            </nav>
+        </header>
+              <!--==================== HEADER MOBILE ====================-->
+      <header class="header-mobile" id="header">
+         <nav class="nav_container">
+            <a href="./index.html" class="nav__logo">PeakFysik</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="./index.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Hem</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./pages/services.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Tjänster</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./pages/about.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Om</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./pages/contact.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Kontakt</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+               <div class="nav__social">
+                  <a href="https://www.facebook.com/people/PeakFysik/61571074644315/" target="_blank" class="nav__social-link">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/peakfysik/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://www.tiktok.com/@peak.fysik" target="_blank" class="nav__social-link">
+                     <i class="ri-tiktok-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+        <section class="peak-main-header">
+            <div class="peak-main-container">
+                <div class="peak-main-background"></div>
+                <!--<img src="img/konsultation3.jpg" id="bild1" class="peak-main-background-image" alt="background" />-->
+                <div class="svg-image-container">
+                    <img src="img/logo.svg" alt="Peak Fysik Logo" class="peak-main-logo" />
+                </div>
+                <div class="header-main-peak-section-scroll" id="scrolls">
+                    <p class="header-main-peak-section-scroll-text"></p>
+                    <a href="#offerings-section">&darr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Offerings Section -->
+    <section class="offerings-section" id="offerings-section">
+        <div class="offerings-section-background-1">
+            <div class="offerings-section-background-1-container">
+                <h5 class="offerings-section-offer">Tjänster</h5>
+                <h4 class="offerings-section-title">PAKET 1</h4>
+                <p class="offerings-section-text">
+                    HELHETSHÄLSA OCH SMÄRTFRIHET
+                    FRIGÖR DIN KROPP, LINDRA SMÄRTA OCH LEV UTAN BEGRÄNSNINGAR.
+                </p>
+                <div class="offerings-section-button">
+                    <a href="./pages/contact.html" class="button-offerings">BOKA NU</a>
+                </div>
+            </div>
+        </div>
+        <div class="offerings-section-background-2">
+            <div class="offerings-section-background-2-container">
+                <h5 class="offerings-section-offer">Tjänster</h5>
+                <h4 class="offerings-section-title">PAKET 2</h4>
+                <p class="offerings-section-text">
+                    PRESTATIONSOPTIMERING OCH ÅTERHÄMTNING
+                    TA DIN TRÄNING TILL NÄSTA NIVÅ, UTVÄRDERA, ANPASSA OCH DOMINERA.
+                </p>
+                <div class="offerings-section-button">
+                    <a href="./pages/contact.html" class="button-offerings">BOKA NU</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-main">
+        <div class="footer-main-container">
+            <a href="./index.html"><p class="footer-main-logo">PEAK FYSIK</p></a>
+            <p class="footer-main-slogan">BLI BÄTTRE IDAG</p>
+            <div class="footer-main-socials">
+                <a href="https://www.facebook.com/people/PeakFysik/61571074644315/"><i class='bxl bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/peakfysik/"><i class='bxl bxl-instagram'></i> </a>
+                <a href="https://www.tiktok.com/@peak.fysik"><i class='bxl bxl-tiktok'></i> </a>
+            </div>
+            <p class="footer-text">© PeakFysik 2025 </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
