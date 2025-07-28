@@ -135,46 +135,37 @@
             <h2>Kontakta oss</h2>
 
 
-            <form action="#">
+            <form id="contactForm">
                 <div class="input-box">
                     <div class="input-field field">
-                        <input type="text" placeholder="Namn" id="name"
-                        class="item"
-                        autocomplete="off">
-                        <div class="error-txt">Namn kan inte vara blank</div>
+                    <input type="text" name="user_name" placeholder="Namn" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Namn kan inte vara blank</div>
                     </div>
                     <div class="input-field field">
-                        <input type="text" placeholder="E-post" id="email"
-                        class="item"
-                        autocomplete="off">
-                        <div class="error-txt email">E-post kan inte vara blank</div>
+                    <input type="email" name="email" placeholder="E-post" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">E-post kan inte vara blank</div>
                     </div>
                 </div>
 
                 <div class="input-box">
                     <div class="input-field field">
-                        <input type="text" placeholder="Telefonnummer" id="number"
-                        class="item"
-                        autocomplete="off">
-                        <div class="error-txt">Telefonnummer kan inte vara blank</div>
+                    <input type="tel" name="user_phone" placeholder="Telefonnummer" id="number" class="item" autocomplete="off">
+                    <div class="error-txt">Telefonnummer kan inte vara blank</div>
                     </div>
                     <div class="input-field field">
-                        <input type="text" placeholder="Ämne" id="subject"
-                        class="item"
-                        autocomplete="off">
-                        <div class="error-txt"> Ämne kan inte vara blank</div>
+                    <input type="text" name="subject" placeholder="Ämne" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Ämne kan inte vara blank</div>
                     </div>
                 </div>
 
                 <div class="textarea-field field">
-                    <textarea name="" id="message" cols="30" rows="10"
-                    placeholder="Ditt Meddelande" class="item"
-                    autocomplete="off"></textarea>
-                    <div class="error-txt"> Meddelande kan inte vara blank</div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Ditt Meddelande" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">Meddelande kan inte vara blank</div>
                 </div>
 
-                <button type="submit"> <i class='bxr bx-paper-plane'></i> Skicka</button>
-            </form>
+                <button type="submit"><i class='bxr bx-paper-plane'></i> Skicka</button>
+                </form>
+
             <hr class="section-divider">
         </section>
 
@@ -230,8 +221,8 @@
 
         <!-- Scripts -->
         <script src="https://player.vimeo.com/api/player.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script src="../js/contact.js"></script>
 </body>
 </html>
